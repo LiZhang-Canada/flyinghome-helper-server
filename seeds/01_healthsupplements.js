@@ -9,7 +9,7 @@ exports.seed = async function(knex) {
     {
       id: 1,
       item_name: 'Algae Omega-3',
-      img: 'http://localhost:8080/heart-image1.webp',
+      img: 'http://localhost:8080/images/heart-image1.webp',
       function_description:
         'Webber Naturals Algae Omega-3 EPA/DHA is a vegan source of docosahexaenoic acid (DHA) and eicosapentaenoic acid (EPA) made from sustainably harvested marine algae. It provides the following health benefits: helps to support brain function, helps maintain (normal) heart function, and helps support eye health. Each vegetarian softgel provides a daily dose of 560 mg of omega-3 fatty acids.',
       daily_usage: '1 softgel per day',
@@ -21,7 +21,7 @@ exports.seed = async function(knex) {
     {
       id: 2,
       item_name: 'Wild Alaskan Salmon Whole Fish Oil',
-      img: 'http://localhost:8080/heart-image2.webp',
+      img: 'http://localhost:8080/images/heart-image2.webp',
       function_description:
         'Helps support cardiovascular health and brain function,Source of astaxanthin and vitamin D',
       daily_usage: '4 softgels daily',
@@ -33,7 +33,7 @@ exports.seed = async function(knex) {
     {
       id: 3,
       item_name: 'webber naturals Flaxseed Oil',
-      img: 'http://localhost:8080/heart-image3.webp',
+      img: 'http://localhost:8080/images/heart-image3.png',
       function_description:
         'source of essential fatty acid,brain function & heart health.Flaxseed oil comes from the seeds of the flax plant Linum usitatissimum. Flaxseed oil contains both omega-3 and omega-6 essential fatty acid, which are needed for the maintenance of good health. Flaxseed oil contains the essential fatty acid alpha-linolenic acid (ALA), which is converted in the body to EPA and DHA, the omega-3s found in fish oil.An overabundance in consumption of trans-saturated and saturated fats coming from processed and packaged foods, and diets high in meat protein causes a nutritional imbalance, leading to a deficiency of omega-3.Organic Flaxseed Oil from webber naturals is a rich plant source of omega-3 essential fatty acids with lignans that are natural phytochemicals found in high concentrations in flaxseed and in flaxseed oil. Webber naturals organic flaxseed oil is cold pressed to protect the oils from heat, and in softgel form for convenience.',
       daily_usage: '1–3 softgels 3 times daily or as directed by a physician. Drink a full glass (250 mL or 8 ounces) of liquid with each dose.Do not take within 2 hours of other medications',
