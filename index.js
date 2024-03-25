@@ -10,9 +10,15 @@ app.use(express.static("public"));
 const PORT = process.env.PORT || 8080;
 
 const healthsupplementsRoutes = require("./routers/healthsupplements-router");
+//for user signup & login
+const authRoutes = require("./routers/auth.js");
+const listRoutes = require("./routers/myList.js");
 
-// all users routes
+// routes
 app.use("/api", healthsupplementsRoutes);
+
+app.use("/auth", authRoutes);
+app.use("/my-list", listRoutes);
 
 app.listen(PORT, () => {
   console.log(`running at http://localhost:${PORT}`);
