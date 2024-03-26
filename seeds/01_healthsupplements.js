@@ -42,7 +42,114 @@ exports.seed = async function(knex) {
       category: '["heart","brain"]',
       target_audience: '["Senior","Men","Women"]',
     },
-
+    {
+      id: 4,
+      item_name: 'Coenzyme Q10',
+      img: 'http://localhost:8080/images/image4.webp',
+      function_description:
+        'Clear enteric softgels helps reduce digestif upset in individuals with sensitive stomachs;Provides an antioxidant;Helps support cardiovascular health;Helps reduce the frequency of migraine headaches',
+      daily_usage: '1 softgel daily or as directed by a physician. Use for at least three months to see beneficial effects.',
+      function_in_Chinese:'肠溶软胶囊有助于减少对有敏感胃部的人的消化不适,提供一种抗氧化剂,有助于支持心血管健康,有助于减少偏头痛的发作频率。辅酶Q10号称心脏的发动机，可保护心肌，呵护心脏。',
+      usage_in_Chinese:'每天1粒软胶囊，或遵医嘱服用。连续使用至少三个月以观察到有益效果。',
+      category: '["heart"]',
+      target_audience: '["Senior","Men","Women"]',
+    },
+    {
+      id: 5,
+      item_name: 'Nature’s Bounty Hair, Skin and Nails Gummies',
+      img: 'http://localhost:8080/images/image5.webp',
+      function_description:
+        'With Biotin;Skin and Hair Nutrients;Flavour: Strawberry',
+      daily_usage: 'chew 2 gummies per day. Take with food.',
+      function_in_Chinese:'该产品添加生物素,含有针对皮肤和头发的营养成分，草莓风味易于入口。',
+      usage_in_Chinese:'每天2粒',
+      category: '["Skin","Hair"]',
+      target_audience: '["Women"]',
+    },
+    {
+      id: 6,
+      item_name: 'webber naturals Cinnamon',
+      img: 'http://localhost:8080/images/image6.png',
+      function_description:
+        'Promote healthy glucose levels contributing to improved overall health,Features CinnamonRich cinnamon 20:1 extract',
+      daily_usage: '1 Capsule daily or as directed by a physician.',
+      function_in_Chinese:'该产品可促进健康的血糖水平，有助于改善整体健康.可提高胰岛素活性，从而起到平衡血糖的作用。含有高浓度肉桂提取物（20:1肉桂提取比例）',
+      usage_in_Chinese:'每日1粒胶囊，或遵医嘱服用。',
+      category: '["hyperglycemia"]',
+      target_audience: '["Senior","Men","Women"]',
+    },
+    {
+      id: 7,
+      item_name: 'webber naturals Super Sleep',
+      img: 'http://localhost:8080/images/image7.webp',
+      function_description:
+        'Contains 66 % more melatonin (2.5 mg) than our previous formula,Helps reduce the time it takes to fall asleep;At higher dosages, 5-HTP is used as a sleep aid',
+      daily_usage: 'Chew 1–2 tablets daily with food at or before bedtime or as directed by a physician. Consult a physician for use beyond 4 weeks.',
+      function_in_Chinese:'该产品比之前的配方多66%的褪黑素（2.5毫克），有助于缩短入睡时间。减轻神经紧张，提高睡眠效率。缓解抑郁症，失眠。非安眠药，无副作用，无依赖性。',
+      usage_in_Chinese:'睡前30-45分钟口嚼1-2粒，或遵医嘱。连续服用4周以上请咨询医生。',
+      category: '["insomnia"]',
+      target_audience: '["Senior","Men","Women"]',
+    },
+    {
+      id: 8,
+      item_name: 'Youtheory Collagen',
+      img: 'http://localhost:8080/images/image8.webp',
+      function_description:
+        'Helps reduce joint pain associated with osteoarthritis;Source of essential amino acid lysine to help in collagen formation;Vitamin C helps in connective tissue formation',
+      daily_usage: 'Take 3 tablets twice a day. Use for a minimum of 5 months to see beneficial joint effects',
+      function_in_Chinese:'该产品有助于减轻与骨关节炎相关的关节痛,提供必需氨基酸赖氨酸以帮助胶原蛋白形成.维生素C有助于结缔组织的形成.一般人保养，能补充胶原蛋白和粘多糖体蛋白质等皮肤组织的主要成分，令肌肤紧细柔软，提高肌肤储水能力，改善肌肤的柔软度，改善粗大毛孔，尤其适合成年女性。',
+      usage_in_Chinese:'每日2次，一次3粒（餐前30分钟空腹服用效果最佳）',
+      category: '["Skin","Arthritis"]',
+      target_audience: '["Senior","Men","Women"]',
+    },
+    {
+      id: 9,
+      item_name: 'webber naturals Liver Health',
+      img: 'http://localhost:8080/images/image9.png',
+      function_description:
+        'Helps to support and protect liver function,Helps to promote healthy glucose metabolism,Provides antioxidants for the maintenance of good health',
+      daily_usage: '1 capsule 3 times daily or as directed by a physician.',
+      function_in_Chinese:'该产品有助于支持和保护肝脏功能,有助于促进健康的葡萄糖代谢,提供抗氧化剂，维护良好的健康状态.',
+      usage_in_Chinese:'每日3次，一次1粒,或遵医嘱。',
+      category: '["Liver"]',
+      target_audience: '["Senior","Men","Women"]',
+    },
+    {
+      id: 10,
+      item_name: 'webber naturals Omega-3 & CoQ10 with Plant Sterols',
+      img: 'http://localhost:8080/images/image10.png',
+      function_description:
+        'OmegaQ Sterols from Webber Naturals combines omega-3 fatty acids from high-quality fish oil, CoQ10, and plant sterols in delayed-release softgels. Fish oils and CoQ10 support cardiovascular health and and help reduce serum triglycerides/triacylglycerols, while plant sterols help maintain healthy cholesterol levels.',
+      daily_usage: '2 softgels daily with meals or as directed by a physician.Reduce Serum Triglycerides: 5 softgels daily with meals or as directed by a physician',
+      function_in_Chinese:'Webber Naturals的OmegaQ Sterols结合了来自高品质鱼油的Omega-3脂肪酸、辅酶Q10和植物固醇，采用延时释放软胶囊。鱼油和辅酶Q10支持心血管健康，有助于降低血清甘油三酯/三酰甘油水平,而植物固醇有助于维持健康的胆固醇水平。',
+      usage_in_Chinese:'每日2粒,随餐服用,或遵医嘱。针对降低血清甘油三酯：每天5粒，随餐服用或遵医嘱。',
+      category: '["Heart","Brain"]',
+      target_audience: '["Senior","Men","Women"]',
+    },
+    {
+      id: 11,
+      item_name: 'webber naturals Lutein',
+      img: 'http://localhost:8080/images/image11.webp',
+      function_description:
+        'Lutein is an antioxidant for eye health,Promotes the health of the macula and retina by filtering out damaging blue light.Helps reduce the risk of developing Age-Related Macular Degeneration,Helps reduce cataracts.',
+      daily_usage: '1 softgel daily, preferably with meals, or as directed by a physician',
+      function_in_Chinese:'叶黄素是一种用于眼睛健康的抗氧化剂，通过滤除有害的蓝光，促进黄斑和视网膜的健康。叶黄素能够延缓老年人因黄斑退化而引起的视力退化和失明症，降低患白内障的几率。',
+      usage_in_Chinese:'19岁以上成人，每日1粒,随餐服用。',
+      category: '["Eye"]',
+      target_audience: '["Senior","Men","Women"]',
+    },
+    {
+      id: 12,
+      item_name: 'webber naturals Glucosamine & Chondroitin',
+      img: 'http://localhost:8080/images/image12.png',
+      function_description:
+        'Completely natural and non-toxic,this is a remedy that helps protect against the deterioration of cartilage due to chronic joint disease. Glucosamine is a building block for healthy cartilage and chondroitin stimulates production of key components found in cartilage. Together they help protect and rebuild damaged cartilage. It is excellent for athletes who experience much connective tissue stress.',
+      daily_usage: '1 capsule 3 times daily with meals or as directed by a physician. Use for a minimum of 4 weeks to see benefical effects.',
+      function_in_Chinese:'该产品完全天然且无毒，可帮助防止由于慢性关节疾病导致的软骨退化。葡萄糖胺是健康软骨的构建块，而硫酸软骨素则刺激软骨中关键成分的产生。它们共同帮助保护和重建受损的软骨。对于那些经历大量结缔组织压力的运动员来说，它非常适合。',
+      usage_in_Chinese:'一天3粒。至少服用一个月才能见效。',
+      category: '["Joint"]',
+      target_audience: '["Senior","Men","Women"]',
+    },
   ]);
 };
 
