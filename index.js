@@ -18,7 +18,7 @@ const listRoutes = require("./routers/myList.js");
 app.use("/api", healthsupplementsRoutes);
 
 app.use("/auth", authRoutes);
-app.use("/my-list", listRoutes);
+app.use("/mylist", listRoutes);
 
 app.listen(PORT, () => {
   console.log(`running at http://localhost:${PORT}`);

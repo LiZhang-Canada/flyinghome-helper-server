@@ -1,3 +1,4 @@
+const knex = require("knex")(require("../knexfile"));
 const router = require("express").Router();
 const jwt = require("jsonwebtoken");
 // const { users } = require("../consts.js");
