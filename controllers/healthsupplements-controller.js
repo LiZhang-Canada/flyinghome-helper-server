@@ -32,7 +32,7 @@ const getOneHealthSupplement = async (req, res) => {
 
 const getHealthSupplements = async (req, res) => {
   try {
-    const data = await knex.select("img").from("healthsupplements");
+    const data = await knex.select("id","item_name","img").from("healthsupplements");
     res.status(200).json(data);
   } catch (error) {
     res.status(500).json({
