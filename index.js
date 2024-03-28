@@ -15,13 +15,16 @@ const authRoutes = require("./routers/auth.js");
 const listRoutes = require("./routers/myList.js");
 
 const shoppinglistRoutes = require("./routers/shoppinglist-router");
+const relativesRoutes = require("./routers/relatives-router");
 
 // routes
 app.use("/api", healthsupplementsRoutes);
 app.use("/api", shoppinglistRoutes);
+app.use("/api", relativesRoutes);
+
 
 app.use("/auth", authRoutes);
-app.use("/mylist", listRoutes);
+app.use("/mydashboard", listRoutes);
 
 app.listen(PORT, () => {
   console.log(`running at http://localhost:${PORT}`);

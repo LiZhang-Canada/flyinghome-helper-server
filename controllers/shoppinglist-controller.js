@@ -24,7 +24,7 @@ const getShoppingListPerUser = async (req, res) => {
         });
       }
   
-      res.status(200).json(data[0]);
+      res.status(200).json(data);
     } catch (err) {
       res
         .status(500)
@@ -63,7 +63,6 @@ const getShoppingListPerUser = async (req, res) => {
           }
           )
       }
-      console.log(newList);
   
       knex("shoppinglist")
       .where('relationship_id', relationExists.id)
