@@ -14,8 +14,11 @@ const healthsupplementsRoutes = require("./routers/healthsupplements-router");
 const authRoutes = require("./routers/auth.js");
 const listRoutes = require("./routers/myList.js");
 
+const shoppinglistRoutes = require("./routers/shoppinglist-router");
+
 // routes
 app.use("/api", healthsupplementsRoutes);
+app.use("/api", shoppinglistRoutes);
 
 app.use("/auth", authRoutes);
 app.use("/mylist", listRoutes);
