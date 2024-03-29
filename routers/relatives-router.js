@@ -4,7 +4,7 @@ const relativesController = require("../controllers/relatives-controller");
 
 
   router
-  .route("/relatives")
+  .route("/relatives/:id")
   .get(relativesController.getRelatives)
 
 module.exports = router;
