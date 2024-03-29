@@ -39,19 +39,24 @@ const getShoppingListPerUser = async (req, res) => {
     }
   
     try {
-      const relationExists = await knex("relationship")
-      .where("email", relationship_email)
+      const userExists = await knex("users")
+      .where("email", user_email)
       .first();
-    if (!relationExists) {
-      return res.status(400).send(`oops, you're not ${user_email}'s relative. `);
+    if (!userExists) {
+      return res.status(400).send(`Please make sure ${user_email} has registered in our website`);
     }
 
-      const userExists = await knex("users")
-        .where("email", user_email)
-        .first();
-      if (!userExists) {
-        return res.status(400).send(`Please make sure ${user_email} has registered in our website`);
-      }
+      const relationExists = await knex("relationship")
+      .where("email", relationship_email)
+      .where ("bind_user", userExists.id)
+      .first();
+    if (!relationExists) {
+      return res.status(400).send(`oops, you're not  ${user_email}'s relative. `);
+    }
+
+
+
+
 
       const newList = [];
       for (let i = 0 ; i < order_list.length ; i++){
