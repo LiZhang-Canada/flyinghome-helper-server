@@ -6,6 +6,7 @@ const getShoppingListPerUser = async (req, res) => {
         .select(
           "shoppinglist.id",
           "users.email",
+          "shoppinglist.item_id",
           "healthsupplements.item_name",
           "healthsupplements.img",
           "relationship.email",
